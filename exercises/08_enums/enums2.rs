@@ -3,11 +3,18 @@
 // Execute `rustlings hint enums2` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+
 
 #[derive(Debug)]
 enum Message {
     // TODO: define the different variants used below
+    Move{       //this is how to define a enum struct variant 
+        x: u32,
+        y: u32,
+    },
+    Echo(String),       //this is how to define a enum tuple variant 
+    ChangeColor(u8,u8,u8), 
+    Quit                    //basic enum variant 
 }
 
 impl Message {
